@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Model;
-using Microsoft.AspNetCore.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using WEB_Portfolio_api.Data;
+using WEB_Portfolio_api.Model;
 
 namespace WEB_Portfolio_api.Controllers
 {
