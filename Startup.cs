@@ -27,7 +27,8 @@ namespace WEB_Portfolio_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            services.AddScoped<ICommanderRepo, MockCommanderRepo>(); //Tell AddScoped our implementation and which repo is mapped to, 
+            //whenever our application asks for data in the Implementation gice them the mapped repo, and when we need to change names, we can only do it here, clean code
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
